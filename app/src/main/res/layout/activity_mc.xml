@@ -1,0 +1,114 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mc_activity_constraint_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.MCActivity">
+
+    <TextView
+        android:id="@+id/questionHeading"
+        android:layout_width="174dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Question:"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/questionBox"
+        android:layout_width="0dp"
+        android:layout_height="183dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="Enter the question here"
+        android:inputType="textMultiLine"
+        android:maxLength="240"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/questionHeading" />
+
+    <TextView
+        android:id="@+id/answerHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:text="Answers"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/questionBox" />
+
+    <Button
+        android:id="@+id/saveQuestionButton"
+        style="@style/buttonStyle"
+        android:layout_width="98dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/colorPrimary"
+        android:text="Save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/answersList" />
+
+    <ScrollView
+        android:id="@+id/answersList"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/saveQuestionButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/answerBox"
+        app:layout_constraintVertical_chainStyle="packed">
+
+        <LinearLayout
+            android:id="@+id/answersListLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@android:drawable/divider_horizontal_textfield"
+            android:dividerPadding="2.5dp"
+            android:orientation="vertical"
+            android:showDividers="beginning|middle|end"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="475dp">
+
+        </LinearLayout>
+    </ScrollView>
+
+    <EditText
+        android:id="@+id/answerBox"
+        android:layout_width="0dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="Enter answers here"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toStartOf="@+id/addAnswerButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/answerHeading" />
+
+    <Button
+        android:id="@+id/addAnswerButton"
+        style="@style/buttonStyle"
+        android:layout_width="112dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="73dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/colorPrimary"
+        android:text="Add Answer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/questionBox" />
+
+</android.support.constraint.ConstraintLayout>

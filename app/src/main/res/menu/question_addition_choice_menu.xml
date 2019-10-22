@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/all_questions_ic"
+        android:orderInCategory="300"
+        android:title="From All Questions"
+        app:showAsAction="ifRoom"></item>
+
+    <item
+        android:id="@+id/tag_questions_ic"
+        android:orderInCategory="300"
+        android:title="By Tags"
+        app:showAsAction="ifRoom"></item>
+
+</menu>

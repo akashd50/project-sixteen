@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".presentation.QuestionViewActivity">
+    <item
+        android:id="@+id/question_edit_icon"
+        android:orderInCategory="300"
+        android:title="Edit"
+        app:showAsAction="never"></item>
+
+    <item
+        android:id="@+id/question_delete_icon"
+        android:orderInCategory="300"
+        android:title="Delete"
+        app:showAsAction="never"></item>
+
+    <item
+        android:id="@+id/question_show_answer_icon"
+        android:orderInCategory="300"
+        android:title="Show Answer"
+        app:showAsAction="never"></item>
+
+</menu>

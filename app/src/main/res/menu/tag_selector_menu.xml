@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/add_tag_icon"
+        android:orderInCategory="300"
+        android:title="Add New Tag"/>
+    <item
+        android:id="@+id/delete_tag_icon"
+        android:orderInCategory="300"
+        android:title="Delete Tags"/>
+</menu>
